@@ -1,0 +1,26 @@
+{
+  "name": "fullstack",
+  "version": "1.0.0",
+  "description": "fullstack app with angular and express",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "server": "nodemon index"
+  },
+  "keywords": [
+    "express",
+    "angular"
+  ],
+  "author": "Yarik Gut",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.3.0",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
