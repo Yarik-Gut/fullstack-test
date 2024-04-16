@@ -1,4 +1,5 @@
 const News = require('../models/news');
+const Category = require('../models/categories');
 
 module.exports.getAllNews = async function(req, res) {
   try {
