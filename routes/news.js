@@ -6,7 +6,7 @@ router.get('/', newsController.getAllNews);
 router.post('/', newsController.createNews);
 router.patch('/:id', newsController.updateNews);
 router.delete('/:id', newsController.deleteNews);
-
+router.get('/:id', newsController.getNewsById);
 
 
 

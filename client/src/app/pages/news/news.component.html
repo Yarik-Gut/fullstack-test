@@ -1,0 +1,11 @@
+<div class="news-container">
+  <div *ngFor="let article of news" class="article">
+    <h2 (click)="showDetails(article)">{{ article.title }}</h2>
+    <p>{{ article.content }}</p>
+    <p>Автор: {{ article.author }}</p>
+    <p>Дата публікації: {{ article.datePublished | date }}</p>
+    <div *ngIf="article.expanded" class="details">
+      <p><strong>Повний текст:</strong> {{ article.fullText }}</p>
+    </div>
+  </div>
+</div>

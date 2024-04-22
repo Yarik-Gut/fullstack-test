@@ -55,3 +55,13 @@ module.exports.deleteNews = async function(req, res) {
     res.status(500).json({ message: err.message });
   }
 }
+
+module.exports.getNewsById = async function(req, res) {
+  try {
+    const news = await News.findById(req.params.id);
+    if (!news) return res.status(404).json({ message: "Новину не знайдено." });
+    res.json(news);
+  } catch (err) {
+    res.status(500).json({ message: err.message });
+  }
+}
